@@ -27,9 +27,12 @@ class Schedule:
                     numGuys += 1
                 service.addWelcomer(expPerson)
 
-                intPeople = roster.getByExperience(4) + roster.getByExperience(3)
-                intPeople = [(person,person.largeGroupCount) for person in intPeople]
-                intPeople = sorted(intPeople, key=lambda x:x[1])
+                guys = roster.getByGender("M")
+                guys = [(guys,guys.largeGroupCount) for guy in guys]
+                guys = sorted(guys, key=lambda x:x[1])
+                girls = roster.getByGender("F")
+                girls = [(girls,girls.largeGroupCount) for girl in girls]
+                girls = sorted(girls, key=lambda x:x[1])
 
             else if whichService.equals("9:30"):
 
