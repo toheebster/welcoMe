@@ -18,6 +18,7 @@ class roster:
         data = [line for line in dataFile]
         data = data[1:]
 
+        #make person
         for row in data:
             name = row[0]
             person = Person(name)
@@ -34,8 +35,6 @@ class roster:
             person.car = row[5]
             data.append(person)
 
-    def get:q
-    :
 
     def getData(self):
         return self.data
@@ -48,3 +47,4 @@ class roster:
 
     def getByExperience(self,experience):
         return [person for person in self.data if person.experience == experience]
+
