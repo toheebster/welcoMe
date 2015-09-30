@@ -26,11 +26,11 @@ class roster:
             person.experience = row[3]
             conflictServices = row[4].split(",")
             if "Large Group" in conflictServices:
-                person.largeGroup = True
+                person.largeGroup = False
             if "9:30" in conflictServices:
-                person.nineThirty = True
+                person.nineThirty = False
             if "12:30" in conflictServices:
-                person.twelveThirty = True
+                person.twelveThirty = False
             person.car = row[5]
             data.append(person)
 

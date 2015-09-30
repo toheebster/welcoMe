@@ -7,9 +7,12 @@ class person:
         self.gender = ""
         self.conflictDates = []
         self.experience = -1
-        self.largeGroup = False
-        self.nineThirty = False
-        self.twelveThirty = False
+        self.largeGroup = True
+        self.nineThirty = True
+        self.twelveThirty = True
+        self.largeGroupCount = 0
+        self.nineThirtyCount = 0
+        self.twelveThirtyCount = 0
         self.car = False
         self.dates = []
 
