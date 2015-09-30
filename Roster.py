@@ -34,6 +34,9 @@ class roster:
             person.car = row[5]
             data.append(person)
 
+    def get:q
+    :
+
     def getData(self):
         return self.data
 
