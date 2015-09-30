@@ -8,5 +8,4 @@ class Service:
         self.numGirls = numGirls
         self.numAny = numAny
         self.welcomers = []
-#self.location = ""
 
